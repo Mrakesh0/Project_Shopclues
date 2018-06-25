@@ -32,13 +32,11 @@ public class SearchProduct extends BasePage
 	Thread.sleep(10000);
 	h1.accountClick();
 	
-	//Thread.sleep(5000);
-	//h1.cartClick();
+	Thread.sleep(5000);
+	h1.cartClick();
 	
 	Thread.sleep(5000);
 	h1.signOut();
-	
-	
 	}
 
 }

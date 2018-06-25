@@ -38,8 +38,6 @@ public class CheckNotification extends BasePage
 	
 	Thread.sleep(5000);
 	h1.signOut();
-	
-	
 	}
 
 
