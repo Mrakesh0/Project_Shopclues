@@ -14,7 +14,7 @@ public class SharePinCode extends BasePage
 	{
 	
 	HomePage h1 = new HomePage(driver);
-	h1.signIn();
+	h1.signIn();  
 	
 	LoginPage l1 = new LoginPage(driver);
 	Thread.sleep(5000);

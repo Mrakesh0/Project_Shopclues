@@ -24,21 +24,15 @@ public class RemoveProductfromWishList extends BasePage
 		l1.login();
 		Thread.sleep(5000);               
 		
-		System.out.println(" login done ");
-		
 		h1.clickWishlist();
 		Thread.sleep(5000);
 		
-		System.out.println(" clicked on wishlist ");
-		
 		ProductPage p1 = new ProductPage(driver);
-		
 		Thread.sleep(5000);
 		p1.removeProductCart();
 		
 		Thread.sleep(5000);
 		h1.accountClick();
-		System.out.println(" account clicked ");
 		Thread.sleep(5000);
 		
 		h1.signOut();
