@@ -14,7 +14,7 @@ public class HomePage extends BasePage
 {
 
 	@FindBy(xpath="//*[@id='sign-in']/a")
-	private WebElement signin;
+	private WebElement signin;     
 	 
 	@FindBy(xpath="//li[@id='sc_uname']")          //    //*[@id="sc_uname"]/a
 	private WebElement account;         
