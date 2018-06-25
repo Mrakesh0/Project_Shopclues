@@ -1,0 +1,54 @@
+package Scripts;
+
+import org.testng.annotations.Test;
+
+import Genericlib.BasePage;
+import POM.HomePage;
+import POM.LoginPage;
+//import POM.ProductPage;
+
+public class RemoveProductfromWishList extends BasePage
+{
+	@Test
+	public void testingScripts() throws InterruptedException
+	{
+		HomePage h1 = new HomePage(driver);
+		h1.signIn();
+		Thread.sleep(5000);
+		
+		LoginPage l1 = new LoginPage(driver);         // open login page
+		l1.username(Genericlib.Excel.excelSheet(Sheet, 0, 0, path));   
+		Thread.sleep(5000);
+		l1.password(Genericlib.Excel.excelSheet(Sheet, 0, 1, path));
+		Thread.sleep(5000);
+		l1.login();
+		Thread.sleep(5000);               //   it opens account
+		
+		System.out.println(" login done ");
+		
+		h1.clickWishlist();
+		Thread.sleep(5000);
+		
+		System.out.println(" clicked on wishlist ");
+		
+		//ProductPage p1 = new ProductPage(driver);
+		
+		Thread.sleep(5000);
+	//	p1.removeProduct();
+		
+		System.out.println(" remove product");
+		
+	//	Thread.sleep(5000);
+		h1.accountClick();
+		System.out.println(" account clicked ");
+		Thread.sleep(5000);
+		
+		h1.signOut();
+		System.out.println("loggedout ");
+		
+		
+		
+		
+	}
+
+}
